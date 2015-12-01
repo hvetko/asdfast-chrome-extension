@@ -32,8 +32,8 @@ function loadXMLDoc() {
 /**
  * Show music notes while waiting for an API response.
  *
- * @param el
- * @param forceStart
+ * @param el DOM element
+ * @param forceStart bool flag to force start
  */
 function musicLoader(el, forceStart) {
     if (forceStart || el.value.length > 5) {
