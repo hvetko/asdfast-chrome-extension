@@ -2,7 +2,7 @@
   "name": "ASDFast - Right-Click Lorem Ipsum Generator",
   "short_name": "ASDFast",
   "description": "Right-Click Lorem Ipsum generator. Click and choose 'Insert AsdFast Text' from the context menu to fill placeholder text.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "background": {
     "scripts": [
       "background.js"
