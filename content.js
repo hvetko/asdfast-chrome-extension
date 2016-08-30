@@ -1,3 +1,6 @@
+/**
+ *
+ */
 function loadXMLDoc() {
     var xhr = new XMLHttpRequest();
     var el = document.activeElement;
@@ -10,8 +13,10 @@ function loadXMLDoc() {
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
             clearInterval(playMusic);
-            var r = eval("(" + xhr.responseText + ")");
+            var r = JSON.parse(xhr.responseText);
             el.value = r.text;
+        } else {
+            clearInterval(playMusic);
         }
     };
 
@@ -25,7 +30,14 @@ function loadXMLDoc() {
 
     var parameters = '&domHeight=' + domHeight + '&domWidth=' + domWidth + '&domPadding=' + domPadding;
 
-    xhr.open("GET", "http://asdfast.beobit.net/api?source=chrome" + parameters, true);
+    var apiUrl = "http://asdfast.beobit.net/api";
+
+    // Need to use https API for https pages
+    if (window.location.protocol == 'https:') {
+        apiUrl = "https://gearsaurus.com/asdfast";
+    }
+
+    xhr.open("GET", apiUrl + "?source=chrome" + parameters, true);
     xhr.send();
 }
 
