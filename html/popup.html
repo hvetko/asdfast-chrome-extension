@@ -7,23 +7,24 @@
 	<link rel="stylesheet" href="../css/popup.css" type="text/css">
 </head>
 <body>
+<a href=""></a>
 <div id="popup">
 	<div id="notification">
 		<div id="text-copied" style="display: none">Text copied...</div>
 	</div>
 
-	<section>
+	<section class="hoverable">
+		<p>Sentence: <button id="copy-sentence" class="btn round-a-bit">Copy</button></p>
 		<input readonly id="sentence" title="sentence" class="asdfast-text round-a-bit">
-		<button id="copy-sentence" class="btn round-a-bit">Copy</button>
 	</section>
 
-	<section>
+	<section class="hoverable">
+		<p>Paragraph: <button id="copy-paragraph" class="btn round-a-bit">Copy</button></p>
 		<textarea readonly id="paragraph" title="paragraph" class="asdfast-text round-a-bit"></textarea>
-		<button id="copy-paragraph" class="btn round-a-bit">Copy</button>
 	</section>
 
 	<section class="align-right">
-		<button id="reload" class="btn round-a-bit">Reload</button>
+		<button id="reload" class="btn-big round-a-bit">Reload</button>
 	</section>
 </div>
 <script src="../js/jquery-3.2.1.min.js"></script>

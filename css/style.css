@@ -34,14 +34,32 @@ a {
 	text-align: right;
 }
 
-.btn{
+.btn {
+	background: #CCCCCC;
+	border: none;
+	color: #ffffff;
+	padding: 1px 3px 2px;
+}
+
+.btn-big {
 	background: #0c739d;
 	border: none;
 	color: #ffffff;
+	padding: 5px 10px;
+	font-size: 120%;
 }
 
-.btn:hover, .btn:active {
+.btn:hover,
+.btn-big:hover {
 	background: #0e6eb5;
+	cursor: pointer;
+
+}
+.btn:active,
+.btn-big:active {
+	background: #0a3886;
+	cursor: pointer;
+
 }
 
 .round-a-bit {
