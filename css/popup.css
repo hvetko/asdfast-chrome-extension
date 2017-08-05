@@ -19,7 +19,7 @@ h1 img {
 }
 
 #popup {
-	width: 300px;
+	width: 350px;
 }
 
 #notification {
@@ -30,7 +30,7 @@ h1 img {
 }
 
 #paragraph {
-	min-height: 250px;
+	min-height: 210px;
 }
 
 #version {
@@ -47,4 +47,9 @@ h1 img {
 
 .hoverable:hover {
 	background: #fafafa;
+}
+
+.copier {
+	text-align: right;
+	padding: 3px 5px 5px 0;
 }
