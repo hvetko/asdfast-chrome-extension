@@ -12,7 +12,7 @@ function Popup() {
 	this.loadASDFast = function () {
 		var self = this;
 		var xhr = new XMLHttpRequest();
-		xhr.open("GET", "http://asdfast.beobit.net/api?length=6&type=paragraph", true);
+		xhr.open("GET", "http://asdfast.beobit.net/api/?length=6&type=paragraph", true);
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState === XMLHttpRequest.DONE) {
 				var response = JSON.parse(xhr.responseText);

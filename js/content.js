@@ -36,7 +36,7 @@ function Content() {
 
 		var parameters = '&domHeight=' + domHeight + '&domWidth=' + domWidth + '&domPadding=' + domPadding;
 
-		var apiUrl = "http://asdfast.beobit.net/api";
+		var apiUrl = "http://asdfast.beobit.net/api/";
 
 		// Need to use https API for https pages
 		if (window.location.protocol === 'https:') {
