@@ -26,7 +26,16 @@ h1 img {
 	height: 12px;
 	overflow: hidden;
 	color: #2c8d3a;
-	padding-top: 5px;
+	padding: 10px 0 5px;
+}
+
+#paragraph {
+	min-height: 250px;
+}
+
+#version {
+	color: #999999;
+	font-size: 50%;
 }
 
 .asdfast-text {
@@ -37,5 +46,5 @@ h1 img {
 }
 
 .hoverable:hover {
-	background: #f1f1f1;
+	background: #fafafa;
 }
