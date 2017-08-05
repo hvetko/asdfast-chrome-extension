@@ -5,6 +5,11 @@
 			"js/background.js"
 		]
 	},
+	"browser_action": {
+		"default_icon": "img/asdfast-128.png",
+		"default_popup": "html/popup.html",
+		"default_title": "ASDFast"
+	},
 	"description": "Right-Click Lorem Ipsum generator. Click and choose 'Insert AsdFast Text' from the context menu to fill placeholder text.",
 	"icons": {
 		"128": "img/asdfast-128.png",
@@ -18,8 +23,9 @@
 		"contextMenus",
 		"http://*/",
 		"https://*/",
-		"notifications"
+		"notifications",
+		"http://asdfast.beobit.net/"
 	],
 	"short_name": "ASDFast",
-	"version": "1.2.0"
+	"version": "1.3.0"
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ASDFast</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<link rel="stylesheet" href="../css/popup.css" type="text/css">
+</head>
+<body>
+<div id="popup">
+	<div id="notification">
+		<div id="text-copied" style="display: none">Text copied...</div>
+	</div>
+
+	<section>
+		<input readonly id="sentence" title="sentence" class="asdfast-text round-a-bit">
+		<button id="copy-sentence" class="btn round-a-bit">Copy</button>
+	</section>
+
+	<section>
+		<textarea readonly id="paragraph" title="paragraph" class="asdfast-text round-a-bit"></textarea>
+		<button id="copy-paragraph" class="btn round-a-bit">Copy</button>
+	</section>
+
+	<section class="align-right">
+		<button id="reload" class="btn round-a-bit">Reload</button>
+	</section>
+</div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/popup.js"></script>
+</body>
+</html>
