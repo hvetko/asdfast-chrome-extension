@@ -20,16 +20,51 @@
 			<div id="text-copied" style="display: none">Text copied...</div>
 		</div>
 	</section>
-	<section class="hoverable">
+	<section>
 		<p>Sentence:</p>
 		<input readonly id="sentence" title="sentence" class="asdfast-text round-a-bit">
-		<div class="copier"><button id="copy-sentence" class="btn round-a-bit">Copy</button></div>
+		<div class="copy-button-positioner">
+			<button source="sentence" class="btn copier round-a-bit">Copy</button>
+		</div>
 	</section>
 
-	<section class="hoverable">
-		<p>Paragraph:</p>
-		<textarea readonly id="paragraph" title="paragraph" class="asdfast-text round-a-bit"></textarea>
-		<div class="copier"><button id="copy-paragraph" class="btn round-a-bit">Copy</button></div>
+	<section>
+		<div class="tab-area">
+			<ul class="tab-nav">
+				<li tab="tab-paragraph" class="tab-nav-tab active">Paragraph</li>
+				<li tab="tab-lists" class="tab-nav-tab">Lists</li>
+				<li tab="tab-html" class="tab-nav-tab">HTML</li>
+			</ul>
+
+			<div class="tab" id="tab-paragraph">
+				<textarea readonly id="paragraph" title="paragraph"
+						  class="asdfast-text round-a-bit textblock-tall"></textarea>
+				<div class="copy-button-positioner">
+					<button source="paragraph" class="btn copier round-a-bit">Copy</button>
+				</div>
+			</div>
+
+			<div class="tab" id="tab-lists" style="display: none">
+				<textarea readonly id="list-sentences" title="list-sentences"
+						  class="asdfast-text round-a-bit textblock-short"></textarea>
+				<div class="copy-button-positioner">
+					<button source="list-sentences" class="btn copier round-a-bit">Copy</button>
+				</div>
+
+				<textarea readonly id="list-words" title="list-words"
+						  class="asdfast-text round-a-bit textblock-short"></textarea>
+				<div class="copy-button-positioner">
+					<button source="list-words" class="btn copier round-a-bit">Copy</button>
+				</div>
+			</div>
+
+			<div class="tab" id="tab-html" style="display: none">
+				<textarea readonly id="html" title="list" class="asdfast-text round-a-bit textblock-tall"></textarea>
+				<div class="copy-button-positioner">
+					<button source="html" class="btn copier round-a-bit">Copy</button>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section class="align-right">

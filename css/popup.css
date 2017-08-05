@@ -25,12 +25,11 @@ h1 img {
 #notification {
 	height: 12px;
 	overflow: hidden;
-	color: #2c8d3a;
 	padding: 10px 0 5px;
 }
 
-#paragraph {
-	min-height: 210px;
+#text-copied {
+	color: #2c8d3a;
 }
 
 #version {
@@ -45,11 +44,42 @@ h1 img {
 	border: 1px solid #dddddd;
 }
 
-.hoverable:hover {
-	background: #fafafa;
-}
-
-.copier {
+.copy-button-positioner {
 	text-align: right;
 	padding: 3px 5px 5px 0;
+}
+
+.tab-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tab-nav li {
+	display: inline-block;
+	background: #999999;
+	color: #ffffff;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.tab-nav li:hover {
+	background: #666666;
+}
+
+.tab-nav li.active {
+	background: #dddddd;
+	color: #333333;
+}
+
+.tab {
+	min-height: 245px;
+}
+
+.textblock-tall {
+	min-height: 210px;
+}
+
+.textblock-short {
+	min-height: 88px;
 }
