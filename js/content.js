@@ -36,12 +36,7 @@ function Content() {
 
 		var parameters = '&domHeight=' + domHeight + '&domWidth=' + domWidth + '&domPadding=' + domPadding;
 
-		var apiUrl = "http://asdfast.beobit.net/api/";
-
-		// Need to use https API for https pages
-		if (window.location.protocol === 'https:') {
-			apiUrl = "https://gearsaurus.com/asdfast";
-		}
+		var apiUrl = "https://asdfast.beobit.net/api/";
 
 		xhr.open("GET", apiUrl + "?source=chrome" + parameters, true);
 		xhr.send();
